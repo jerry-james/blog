@@ -1,4 +1,4 @@
-# jerry.fyi blog#
+# jerry.fyi blog
 
 
 ## February 19th, 2017
