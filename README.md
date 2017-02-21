@@ -1,5 +1,8 @@
 # jerry.fyi blog
 
+## February 21st, 2017
+I added my [iswim](https://github.com/jerry-james/iswim) models.
+
 ## February 19th, 2017
 I added my implementation of [The CEK Machine](https://github.com/jerry-james/cek).
 
