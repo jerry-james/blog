@@ -1,12 +1,15 @@
 # jerry.fyi blog
 
 
+
+## February 24th, 2017
+
+1. I added a repo for my [Intel HEX file format library for Racket](https://github.com/jerry-james/intel-hex)
+2. I found out that racket syntax highlighting works, but coq causes a page build failure.
+
 ```racket
 (define (test) 0)
 ```
-## February 24th, 2017
-
-I added a repo for my [Intel HEX file format library for Racket](https://github.com/jerry-james/intel-hex)
 
 ## February 23rd, 2017
 
