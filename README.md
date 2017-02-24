@@ -12,7 +12,7 @@ I added a repo for my [Intel HEX file format library for Racket](https://github.
 
 Today I played around with Coq and relations by copying stuff from http://www.cis.upenn.edu/~bcpierce/sf/current/Smallstep.html and trying to apply it to the first chapter of SEwPR.
 
-```coq
+```
 Definition relation (X: Type) := X -> X -> Prop.
 
 (* 1.1 *)
