@@ -1,8 +1,4 @@
-# jerry.fyi blog
-
-
-
-## February 24th, 2017
+# February 24th, 2017
 
 1. I added a repo for my [Intel HEX file format library for Racket](https://github.com/jerry-james/intel-hex)
 2. I found out that racket syntax highlighting works, but coq causes a page build failure.
@@ -11,7 +7,7 @@
 (define (test) 0)
 ```
 
-## February 23rd, 2017
+# February 23rd, 2017
 
 Today I played around with Coq and relations by copying stuff from http://www.cis.upenn.edu/~bcpierce/sf/current/Smallstep.html and trying to apply it to the first chapter of SEwPR.
 
@@ -85,12 +81,12 @@ Qed.
 ```
 
 
-## February 21st, 2017
+# February 21st, 2017
 I added my [iswim](https://github.com/jerry-james/iswim) models.
 
-## February 19th, 2017
+# February 19th, 2017
 I added my implementation of [The CEK Machine](https://github.com/jerry-james/cek).
 
 
-## November 27th, 2016
+# November 27th, 2016
 I added my Racket implementation of the [COBS](https://github.com/jerry-james/cobs) algorithm. 
