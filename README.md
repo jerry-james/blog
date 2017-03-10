@@ -1,3 +1,22 @@
+# March 10th, 2017
+
+I added the basis for a [front-end](https://github.com/jerry-james/cek/blob/master/src/main/antlr4/Sexp.g4) to the CEK machine.  I pulled in the grammar from the last time I tried to do something like this, not really sure how to coax antlr into doing what I want.  I'm trying to decide between only having the sexp in the grammar, or adding in stuff for parsing out concrete syntactic forms like variable and function definitions like this. 
+
+```
+sexps : sexp* EOF;
+
+sexp : vardefn | fundefn | atom | list ;
+
+vardefn : '(' 'define' SYMBOL sexp ')';
+fundefn : '(' 'define' '(' fundefnsymbol SYMBOL* ')' sexp* ')';
+
+fundefnsymbol : SYMBOL;
+
+list : '(' sexp* ')';
+
+atom : STRING | SYMBOL | NUMBER ;
+```
+
 # February 24th, 2017
 
 1. I added a repo for my [Intel HEX file format library for Racket](https://github.com/jerry-james/intel-hex)
