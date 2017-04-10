@@ -1,3 +1,39 @@
+# April 10th, 2017
+
+A stack machine for building sentences using the [axiom-of-specification](https://github.com/jerry-james/axiom-of-specification)
+
+```racket
+Russels-Paradox
+            B x A bt x x bt not st y B bt y A bt y y bt not and iff y swap fa ift sto 
+(stack: #&(Russels-Paradox))
+(stack: #&(B Russels-Paradox))
+(stack: #&(x B Russels-Paradox))
+(stack: #&(A x B Russels-Paradox))
+(stack: #&((x ∈ A) B Russels-Paradox))
+(stack: #&(x (x ∈ A) B Russels-Paradox))
+(stack: #&(x x (x ∈ A) B Russels-Paradox))
+(stack: #&((x ∈ x) (x ∈ A) B Russels-Paradox))
+(stack: #&((¬ (x ∈ x)) (x ∈ A) B Russels-Paradox))
+(stack: #&((B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(y (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(B y (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&((y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(y (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(A y (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&((y ∈ A) (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(y (y ∈ A) (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(y y (y ∈ A) (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&((y ∈ y) (y ∈ A) (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&((¬ (y ∈ y)) (y ∈ A) (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(((y ∈ A) ∧ (¬ (y ∈ y))) (y ∈ B) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(((y ∈ B) ↔ ((y ∈ A) ∧ (¬ (y ∈ y)))) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(y ((y ∈ B) ↔ ((y ∈ A) ∧ (¬ (y ∈ y)))) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(((y ∈ B) ↔ ((y ∈ A) ∧ (¬ (y ∈ y)))) y (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&((∀ y ((y ∈ B) ↔ ((y ∈ A) ∧ (¬ (y ∈ y))))) (B = (x ∈ A) : (¬ (x ∈ x))) Russels-Paradox))
+(stack: #&(((B = (x ∈ A) : (¬ (x ∈ x))) → (∀ y ((y ∈ B) ↔ ((y ∈ A) ∧ (¬ (y ∈ y)))))) Russels-Paradox))
+(stack: #&())
+```
+
 # March 10th, 2017
 
 I added the basis for a [front-end](https://github.com/jerry-james/cek/blob/master/src/main/antlr4/Sexp.g4) to the CEK machine.  I pulled in the grammar from the last time I tried to do something like this, not really sure how to coax antlr into doing what I want.  I'm trying to decide between only having the sexp in the grammar, or adding in stuff for parsing out concrete syntactic forms like variable and function definitions like this. 
