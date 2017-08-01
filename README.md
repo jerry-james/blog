@@ -1,3 +1,28 @@
+# August 1st, 2017
+
+I'm reading "The Little Schemer", its making me a better programmer!  I'm trying to find the last version of this function that i wrote, its much worse than this one.
+
+```racket
+#lang racket
+
+(require rackunit)
+
+(define list-to-pairs
+  (λ (l)
+    (cond
+      [(null? l)        '()]
+      [(null? (rest l)) '()]
+      [else (cons (list (first l) (second l))
+                  (list-to-pairs (rest l)))])))
+
+(module+ test
+  (check-equal? (list-to-pairs '())        '() ) 
+  (check-equal? (list-to-pairs '(a))       '() ) 
+  (check-equal? (list-to-pairs '(a b))     '((a b)) )
+  (check-equal? (list-to-pairs '(a b c))   '((a b) (b c)) )
+  (check-equal? (list-to-pairs '(a b c d)) '((a b) (b c) (c d)) ))
+```
+
 # April 10th, 2017
 
 A stack machine for building sentences using the [axiom-of-specification](https://github.com/jerry-james/axiom-of-specification)
